@@ -23,6 +23,6 @@ Executor safePropagatingExecutor = RunnableDecoratingExecutor.from(threadExecuto
 
 Now, whenever `safePropagatingExecutor` is used to run a command, thread state will be propagated safely from the origin to the destination Thread. (Although this example is a simple starter process, Thread-State-Propagation also provides a way to define composite ThreadStatePropagationStarters based on a list of ThreadStatePropagationStarters (i.e. the composite design pattern) as well as fault-tolerant ThreadStatePropagationStarters (which can suppress failures). Runnable-Decorating-Executor also provides the same for RunnableAdorner, but using Thread-State-Propagation is probably more efficient in this case.)
 
-##Contributions
+## Contributions
 
 Contributions are welcome! See the [graydavid-parent](https://github.com/graydavid/graydavid-parent) project for details.
